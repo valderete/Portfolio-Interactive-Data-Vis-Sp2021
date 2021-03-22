@@ -19,4 +19,10 @@ The data used will be derived from a larger, working dataset, gathered and organ
 
 Project design inspiration:
 
-    https://observablehq.com/@urmilaj/african-american-writers
+https://observablehq.com/@urmilaj/african-american-writers
+
+Design resources:
+
+https://visme.co/blog/layout-design/
+
+https://datavizproject.com/
