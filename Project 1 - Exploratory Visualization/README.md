@@ -7,7 +7,7 @@ The main goal for design is to emulate the 31 buttons of a 3-row button accordio
 
 The project will also encompass a preface section to provide basic information on the Conjunto genre and sub-styles explored. I envision this part of the project at the top/beginning of the visualization so as to serve as a clear preface to the main project. I am currently brainstorming graph/information design types to best visualize this part. 
 
-Sketch: 
+Sketch: https://miro.com/app/board/o9J_lOU2hhU=/
 
 The data used will be derived from a larger, working dataset, gathered and organized by myself and the instructors at Conjunto Heritage Taller (https://conjuntoheritagetaller.com/). The data is mostly categorical and will focus mainly on the following variables:
 
@@ -24,5 +24,7 @@ https://observablehq.com/@urmilaj/african-american-writers
 Design resources:
 
 https://visme.co/blog/layout-design/
+
+https://github.com/russellgoldenberg/scrollama#scrollamajs
 
 https://datavizproject.com/
