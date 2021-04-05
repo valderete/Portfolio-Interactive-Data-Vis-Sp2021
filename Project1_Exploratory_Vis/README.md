@@ -19,7 +19,7 @@ The data used will be derived from a larger, working dataset, gathered and organ
 
         -any secondary sub-styles in the song
 
-Dataset:
+Dataset: https://github.com/valderete/Portfolio-Interactive-Data-Vis-Sp2021/blob/main/data/ConjuntoStylesNoAccents.csv
 
 # Architectural Schema:
 https://miro.com/app/board/o9J_lLol-98=/
