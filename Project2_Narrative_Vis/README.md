@@ -23,7 +23,7 @@ The main narrative components of this project aim to communicate the following:
 
 # Sketches and final Mockup:
 Initial Sketch:
-/Users/valeriaalderete/Desktop/DAV/Spring 2021/DATA 73200 - Interactive Data Viz/Portfolio-Interactive-Data-Vis-Sp2021/Project2_Narrative_Vis/Project2_Initial_Sketch.pdf
+https://github.com/valderete/Portfolio-Interactive-Data-Vis-Sp2021/blob/main/Project2_Narrative_Vis/Project2_Initial_Sketch.pdf
 
 # Data
 I will collect the data for this project, using mostly methods of manual collection, organizing, and research. The data will be mostly text and categorical with some quantitative/numeric values. Below are some variables I plan to use:
