@@ -1,4 +1,4 @@
-# Project 2 - Exploratory Viz: 
+# Project 2 - Narrative Viz: 
 # How San Antonio's 1960's Westside Sound Gave Life to Chicano Soul Music
     a look at the music through a data lens
 
