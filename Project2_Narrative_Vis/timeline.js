@@ -107,9 +107,10 @@ const mouseover = function(d) {
       .style("stroke", "red")
       .style("stroke-width", 5)
       //.style("opacity", 1)
-      .html("TOOLTIP TEXT: " + d.Description)
-        .attr("dx", function(d) { return xScale(d.X_position); })
-        .attr("dy", d => yScale(d.Y_position))
+      .text(d => d.Description)
+      // .html("TOOLTIP TEXT: " + d.Description)
+        // .attr("dx", function(d) { return xScale(d.X_position); })
+        // .attr("dy", d => yScale(d.Y_position))
 }
 
 
@@ -175,6 +176,7 @@ const labels = timeline.append("g")
         .attr('dy', d => yScale(d.Y_position)) // function(d) { return yScale(d.Y_position); })
         .attr("fill", "##100f0d")
         .style("text-anchor", "middle")
+        
         
  // LINE ANIMATION
  timeline.selectAll("line")
