@@ -26,17 +26,25 @@ Initial Sketch:
 https://github.com/valderete/Portfolio-Interactive-Data-Vis-Sp2021/blob/main/Project2_Narrative_Vis/Project2_Initial_Sketch.pdf
 
 # Data
-I will collect the data for this project, using mostly methods of manual collection, organizing, and research. The data will be mostly text and categorical with some quantitative/numeric values. Below are some variables I plan to use:
+I collected the data for this project, using mostly methods of manual collection, organizing, and research. The data is mostly text and categorical with some quantitative/numeric values. Below are some variables I used:
 
         -Artist Names
-        -Song Title
-        -Music chart rankings
-        -Labels
-        -Record sales
+        -Coordinates (Lat, Long) of "significant places"
+            -Record Labels
+            -Venues
+            -Recording studios
+            -Nighteclubs / Bars
+            -Record shops
+        -Date of "significant event"
+        -Photos, videos
+        -Addresses
+        -Descriptive text
 
-Dataset: 
+Datasets:
 
-# Architectural Schema:
+https://github.com/valderete/Portfolio-Interactive-Data-Vis-Sp2021/blob/main/data/Westside_Sound_map.csv
+
+https://github.com/valderete/Portfolio-Interactive-Data-Vis-Sp2021/blob/main/data/timeline_data.csv
 
 
 # Inspo & Resources
