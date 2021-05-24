@@ -7,10 +7,10 @@ As an arts admin based in San Antonio, Texas, my work focusses on methods of pro
 
 # Exploring Conjunto Music
 
-    https://valderete.github.io/Portfolio-Interactive-Data-Vis-Sp2021/Project1_Exploratory_Vis/final_index.html
+https://valderete.github.io/Portfolio-Interactive-Data-Vis-Sp2021/Project1_Exploratory_Vis/final_index.html
 
 -------------
 
 # San Antonio's Westside Sound: The Music That Gave Rise to Chicano Soul
 
-    https://valderete.github.io/Portfolio-Interactive-Data-Vis-Sp2021/Project2_Narrative_Vis/index.html
+https://valderete.github.io/Portfolio-Interactive-Data-Vis-Sp2021/Project2_Narrative_Vis/index.html
