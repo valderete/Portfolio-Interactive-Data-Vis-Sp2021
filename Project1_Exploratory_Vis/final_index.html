@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exploring Conjunto Music Styles</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="Title"> Exploring Conjunto Music Styles 
+        <h6> <i>"Conjunto — the traditional music of South Texas — dates back to the end of the 19th century. European settlers moved into the area with their button accordions and began ‘making music’ with the Mexican natives, who favored the bajo sexto (a lower sixth bass guitar traditionally used in Norteño music). The results were magical, and became the signature sound of South Texas — particularly San Antonio. The term "Conjunto", in this context, refers to a "collective" of musicians — the acordeonista and bajista — while the genre actually encompasses several musical styles. Let's explore a few Conjunto music styles."</i><p> <a href="https://conjuntoheritagetaller.com/" target="_blank"> -Conjunto Heritage Taller </a> </p></h6>
+        
+      </div>
+      <div class="NetworkChart"> <div id="NetworkChart">
+          <h4></h4>
+          <h6> As with many genres of music, there are different styles within the Conjunto music genre. Here, we explore eight styles of Conjunto music. Each key below represents a song of a specific style. See the legend for song styles explored and click on a key to reveal song details. </h6>
+          </div>
+        </div>
+      <div class="item2"> <select id="dropdown" name="dropdown"></select> <div id="legend"> </div> </div>
+      <div class="item3"> <div id="waffle"></div> </div>
+      <div class="item4">
+          <div id="tooltip"></div> 
+          <audio id="audio"></audio>
+        </div>
+      <div class="item5"> <a href="http://frontera.library.ucla.edu/">Data source: The Arhoolie Foundation's Strachwitz Frontera Collection of Mexican and Mexican American Recordings </a></div>
+    </div>
+    <div id="d3-container"> </div>
+    
+    
+    <script src="../lib/d3.js"></script>
+    <script src="main_waffle.js"></script>
+    <script src="main_network.js"></script>
+  </body>
+</html>

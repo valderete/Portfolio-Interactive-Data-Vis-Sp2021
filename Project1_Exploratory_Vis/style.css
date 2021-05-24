@@ -1,12 +1,74 @@
-svg {
-    border: #404040 2px solid;
+#waffle {
+  background-color:rgb(129, 129, 129);
+  /* background-image: url(../Project1_Exploratory_Vis/accordion.png);
+  background-position: left;
+  background-size: 1300px; */
   }
-html {
-    background-color: #ebebeb;
-  }
+
+h6 {
+  font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: left;
+  padding: 5px;
+  font-size: 15px;
+}
+
+
+.rect:hover {
+  /* box-shadow: 0px 0px 40px grey; */
+  stroke-width: 3;
+  cursor: pointer;
+}
+
 body {
-    text-align: center;
-    margin: 0;
-    padding: 3px 0;
-    color: #000000;
-  }
+  font-size:50px;
+  color: white;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align:left;
+  background-color:rgb(129, 129, 129);
+  /* border: #ffffff 2px solid; */
+}
+  
+text {
+  font-size:15px;
+  color: white;
+  text-align:left;
+}
+
+
+#legend {
+  font: 13px Arial;
+  color: white;
+  background-color: rgb(129, 129, 129);
+}
+
+#NetworkChart {
+  background-color: rgb(129, 129, 129);
+
+}
+
+/* #NetworkChart { grid-area: header; } */
+.Title { grid-area: header; width: 28ex; height: 300px; }
+.NetworkChart { grid-area: righttop; height: 300px; width: 500px; margin-top: 30px;}
+.item2 { grid-area: menu; text-align: left; width: 10px}
+.item3 { grid-area: main; text-align: center; }
+.item4 { grid-area: right; text-align: center; width: 500px }
+.item5 { grid-area: footer; text-align: center; }
+    a {font-size: 15px; color: white;} 
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header righttop righttop righttop righttop'
+    'menu main right right right right'
+    'footer footer footer footer footer footer';
+  grid-gap: 5px;
+  /* background-color: #000000; */
+  padding: 2px;
+}
+
+.grid-container > div {
+  background-color: rgb(129, 129, 129);
+  /* text-align: left; */
+  padding: 2px ;
+  /* font-size: 30px; */
+}
