@@ -13,7 +13,10 @@ d3.csv('../data/timeline_data.csv', d => {
       Date: new Date(d.Date, 0, 1), // format as date for timescale
       X_position: +d.X_position, // plus sign to format as numeric
       Y_position: +d.Y_position,
-      Event: d.Event
+      Event: d.Event,
+      Description: d.Description,
+      Media: d.Media,
+      Date: d.Date
     }
   })
 .then(data => {
@@ -30,14 +33,14 @@ const timeline = d3.select("#timeline") // select timeline element from HTML
 
 // +SCALES
 xScale = d3.scaleLinear()
-    .domain([-120, 120])
+    .domain([-140, 120])
     .range([0, width/1.5]);
 
 // + Y Axis as timeline
 yScale = d3.scaleLinear() // d3.scaleTime() 
     // .domain([d3.max(data, d => d.Date), d3.min(data, d => d.Date)]) // [min, max]
     //.domain([new Date(2000, 0, 1), new Date(1940, 0, 1)]) // [Max, Min] for chronological order
-    .domain([95, 5])
+    .domain([105, 5])
     .range([height*2 - margin.bottom, margin.bottom]);
 
 ;
@@ -55,7 +58,7 @@ const line = d3.axisLeft(yScale)
 // CALL yAxis as timeline   
 lineGroup = timeline.append("g")
     .attr("class", "line")
-    .attr("transform", `translate(${width/3}, ${0})`)  // align in center of svg
+    .attr("transform", `translate(${width/2.8}, ${0})`)  // align in center of svg
     .call(line)
         .attr("color", "#ffde59")
         .attr("stroke-width", 10);
@@ -75,8 +78,11 @@ xAxisGroup = timeline.append("g")
 
 
 // + TOOLTIP Container
-const Tooltip = timeline.append("div")
+const Tooltip = d3.select("#timeline") // select timeline element from HTML
+    .append("div")
+    .style("position", "absolute")
     .attr("class", "tooltip")
+    .style("visibility", "hidden")
     //.selectAll("text")
     //.data(data)
     //.enter()
@@ -84,49 +90,57 @@ const Tooltip = timeline.append("div")
     //.style("position", "absolute")
     //.attr("dx", d => xScale(d.X_position))
     //.attr("dy", d => yScale(d.Y_position))
-    //.style("visibility", "hidden")
     //.text(d => d.Description)
     //.attr("opacity", 0);
     //.style("top", 0)
     //.style("left", 0)
-    .attr("background-color", "blue")
+    //.attr("background-color", "blue")
     // .style("padding", "5px")
-    .html(
-       '<b><p style="font-size: 25px; line-height: 40px;">' + "Event Name" + '</b> </p>' 
-       + '<p style="font-size: 25px; line-height: 30px;"> Style: ' + "Event Description" + '</p> ')
-
+    //.html(
+       //'<b><p style="font-size: 25px; line-height: 40px;">' + "Event Name" + '</b> </p>' 
+       //+ '<p style="font-size: 25px; line-height: 30px;"> Style: ' + "Event Description" + '</p> ')
 
 
 
 
 // Tooltip FUNCTIONS
-const mouseover = function(d) {
-    Tooltip
-     // .style("opacity", 1)
+const mouseover = function (event,d){
+  //Tooltip
+   // .style("opacity", 1)
+    // .html("TOOLTIP TEXT: " + d.Description)
     d3.select(this)
-      .style("stroke", "red")
-      .style("stroke-width", 5)
-      //.style("opacity", 1)
-      .text(d => d.Description)
-      // .html("TOOLTIP TEXT: " + d.Description)
-        // .attr("dx", function(d) { return xScale(d.X_position); })
-        // .attr("dy", d => yScale(d.Y_position))
+    .style("stroke", "#01b3b3")
+    .style("stroke-width", 8)
+    Tooltip.transition()
+          .duration(200)
+          .style("visibility","visible")
+      
+
+     Tooltip.html("<span style='color:white;'><h3>"+d.Date+"</h3><span style='color:white;'><h2>"+d.Event+"</h2><img src="+d.Media+" style='max-width:50%;height:auto; ></ahref></span><span style='color:white'><p>"+d.Description+"</p></span>" )                            
+
+      //.attr('class', 'audio')
+     // Tooltip.html('<p>' +d.Video+ '</p>')
+      .style("background-color", "#6d655c")
+      .style("width", "25%")
+      .style("padding", "15px")
+      .style("left",(event.pageX)-500+"px")
+      .style("top",(event.pageY)-380+"px")   
+     
+      //.append("div")
+      
+      // .html('<iframe src=" ' + d.Video + ' " title="YouTube video player" ; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+      
 }
 
-
-
-const mouseleave = function(d) {
-    Tooltip
-      .style("opacity", 1)
-    d3.select(this)
-      .style("stroke", "none")
-      //.style("opacity", 0.8)
+const mouseleave = function (event,d){
+  d3.select(this)
+    .style("stroke", "none")
+    Tooltip.style("visibility","hidden")
   }
+  
 
 
 
-
-        
 
 // DRAW LINES (start at X postion 0 for animation))
 const lines = timeline.selectAll("rect")
@@ -141,6 +155,8 @@ const lines = timeline.selectAll("rect")
         .attr("y2",  d => yScale(d.Y_position)) // function(d) { return yScale(d.Y_position); })
         .attr("stroke", "#ffde59")
         .attr("stroke-width", "10")    
+
+
 
 // DRAW CIRCLES as EVENTS (start at X postion 0 for animation)
 const circles = timeline //.append("g") // not sure if i need to append "g"
@@ -165,6 +181,8 @@ const circles = timeline //.append("g") // not sure if i need to append "g"
         .on("mouseover", mouseover)
         .on("mouseleave", mouseleave)
 
+
+        
  // DRAW LABELS       
 const labels = timeline.append("g")
     .selectAll("text")

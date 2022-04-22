@@ -1,0 +1,524 @@
+Last login: Tue Apr 13 13:07:34 on console
+(base) valeriaalderete@Valerias-MBP ~ %   GET https://api.spotify.com/v1/artists/{id}/related-artists
+
+zsh: command not found: GET
+(base) valeriaalderete@Valerias-MBP ~ % curl -X "GET" "https://api.spotify.com/v1/artists/0VB1seSRe8CTJZAFosZZVC/related-artists" -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer BQBZaVqyZr5nsf0WMruEFiCOfqnJhLBEyie-DhlVb_K7sF0OlqZdOA5cUo8iiBrTamYZGbJu4c5oHSD_ZdbHz1S855wiL540V6DWcQ1RWRFyk9pJ7R0sdJnPB2Ne9dP3IqQYBL2ZU5sqoq0"
+{
+  "artists" : [ {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/7skNRvdwTKOfCyHML9NZsG"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 2940
+    },
+    "genres" : [ "classic soul", "souldies" ],
+    "href" : "https://api.spotify.com/v1/artists/7skNRvdwTKOfCyHML9NZsG",
+    "id" : "7skNRvdwTKOfCyHML9NZsG",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b273354a93155a5d642ec08ec6a9",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e02354a93155a5d642ec08ec6a9",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d00004851354a93155a5d642ec08ec6a9",
+      "width" : 64
+    } ],
+    "name" : "The Superbs",
+    "popularity" : 24,
+    "type" : "artist",
+    "uri" : "spotify:artist:7skNRvdwTKOfCyHML9NZsG"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/5SWpHcsOcjnpVGBlFXtKcp"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 787
+    },
+    "genres" : [ "souldies" ],
+    "href" : "https://api.spotify.com/v1/artists/5SWpHcsOcjnpVGBlFXtKcp",
+    "id" : "5SWpHcsOcjnpVGBlFXtKcp",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b27300fb9d2f9512ba69a8f0e708",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e0200fb9d2f9512ba69a8f0e708",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d0000485100fb9d2f9512ba69a8f0e708",
+      "width" : 64
+    } ],
+    "name" : "The Commands",
+    "popularity" : 18,
+    "type" : "artist",
+    "uri" : "spotify:artist:5SWpHcsOcjnpVGBlFXtKcp"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/5vp9AHO9AiPf2A5hlpAkTl"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 498
+    },
+    "genres" : [ "souldies" ],
+    "href" : "https://api.spotify.com/v1/artists/5vp9AHO9AiPf2A5hlpAkTl",
+    "id" : "5vp9AHO9AiPf2A5hlpAkTl",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b273bc8456f0bdea104617a6bb2a",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e02bc8456f0bdea104617a6bb2a",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d00004851bc8456f0bdea104617a6bb2a",
+      "width" : 64
+    } ],
+    "name" : "Dimas III",
+    "popularity" : 18,
+    "type" : "artist",
+    "uri" : "spotify:artist:5vp9AHO9AiPf2A5hlpAkTl"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/5RmvCSl3IoND65aePiv6WI"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 596
+    },
+    "genres" : [ "doo-wop", "soda pop" ],
+    "href" : "https://api.spotify.com/v1/artists/5RmvCSl3IoND65aePiv6WI",
+    "id" : "5RmvCSl3IoND65aePiv6WI",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b27387018f7d51839edd4c0deeac",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e0287018f7d51839edd4c0deeac",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d0000485187018f7d51839edd4c0deeac",
+      "width" : 64
+    } ],
+    "name" : "The Demensions",
+    "popularity" : 9,
+    "type" : "artist",
+    "uri" : "spotify:artist:5RmvCSl3IoND65aePiv6WI"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/7vsHbcgOIbaeMqv3GvvHdO"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 14199
+    },
+    "genres" : [ "classic soul", "souldies" ],
+    "href" : "https://api.spotify.com/v1/artists/7vsHbcgOIbaeMqv3GvvHdO",
+    "id" : "7vsHbcgOIbaeMqv3GvvHdO",
+    "images" : [ {
+      "height" : 1000,
+      "url" : "https://i.scdn.co/image/ecc47e836d93e33852b372ee3b4dcc19f02af771",
+      "width" : 1000
+    }, {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/a8e639af5c184a6eff9748306497465c0ca1986d",
+      "width" : 640
+    }, {
+      "height" : 200,
+      "url" : "https://i.scdn.co/image/1b479ed125243b6407aedec473a427a9389d001d",
+      "width" : 200
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/fcdf80a5c6aea2c48c6b321e729c6e2677cf5efd",
+      "width" : 64
+    } ],
+    "name" : "Sunny & The Sunliners",
+    "popularity" : 40,
+    "type" : "artist",
+    "uri" : "spotify:artist:7vsHbcgOIbaeMqv3GvvHdO"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/33rjua7RFjy9GwqKWnbnGJ"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 8525
+    },
+    "genres" : [ "doo-wop", "rhythm and blues" ],
+    "href" : "https://api.spotify.com/v1/artists/33rjua7RFjy9GwqKWnbnGJ",
+    "id" : "33rjua7RFjy9GwqKWnbnGJ",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b2739bab7b8312aab47369b884f9",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e029bab7b8312aab47369b884f9",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d000048519bab7b8312aab47369b884f9",
+      "width" : 64
+    } ],
+    "name" : "The Dubs",
+    "popularity" : 35,
+    "type" : "artist",
+    "uri" : "spotify:artist:33rjua7RFjy9GwqKWnbnGJ"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/5Wq4oFrEbsAvYqQ1cc6vLz"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 23664
+    },
+    "genres" : [ "classic soul", "souldies" ],
+    "href" : "https://api.spotify.com/v1/artists/5Wq4oFrEbsAvYqQ1cc6vLz",
+    "id" : "5Wq4oFrEbsAvYqQ1cc6vLz",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b273296ac25e9a7bd2a0ff635995",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e02296ac25e9a7bd2a0ff635995",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d00004851296ac25e9a7bd2a0ff635995",
+      "width" : 64
+    } ],
+    "name" : "Ralfi Pagan",
+    "popularity" : 45,
+    "type" : "artist",
+    "uri" : "spotify:artist:5Wq4oFrEbsAvYqQ1cc6vLz"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/349g5As3MNbNkdOfaMdoUJ"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 1093
+    },
+    "genres" : [ "classic soul", "souldies" ],
+    "href" : "https://api.spotify.com/v1/artists/349g5As3MNbNkdOfaMdoUJ",
+    "id" : "349g5As3MNbNkdOfaMdoUJ",
+    "images" : [ ],
+    "name" : "Rosie And Ron",
+    "popularity" : 22,
+    "type" : "artist",
+    "uri" : "spotify:artist:349g5As3MNbNkdOfaMdoUJ"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/0YMDUgSLalkWBp3J2haux5"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 84
+    },
+    "genres" : [ "soda pop" ],
+    "href" : "https://api.spotify.com/v1/artists/0YMDUgSLalkWBp3J2haux5",
+    "id" : "0YMDUgSLalkWBp3J2haux5",
+    "images" : [ ],
+    "name" : "The Native Boys",
+    "popularity" : 2,
+    "type" : "artist",
+    "uri" : "spotify:artist:0YMDUgSLalkWBp3J2haux5"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/5BqWNjEGVr8kilP6gk6VmA"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 67
+    },
+    "genres" : [ "soda pop" ],
+    "href" : "https://api.spotify.com/v1/artists/5BqWNjEGVr8kilP6gk6VmA",
+    "id" : "5BqWNjEGVr8kilP6gk6VmA",
+    "images" : [ ],
+    "name" : "The Ladders",
+    "popularity" : 1,
+    "type" : "artist",
+    "uri" : "spotify:artist:5BqWNjEGVr8kilP6gk6VmA"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/1OXS79e5AMBp2DKWcCbOUp"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 14526
+    },
+    "genres" : [ "classic soul", "souldies" ],
+    "href" : "https://api.spotify.com/v1/artists/1OXS79e5AMBp2DKWcCbOUp",
+    "id" : "1OXS79e5AMBp2DKWcCbOUp",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b273264eb830607feb6a8eb86ce9",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e02264eb830607feb6a8eb86ce9",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d00004851264eb830607feb6a8eb86ce9",
+      "width" : 64
+    } ],
+    "name" : "Sly, Slick & Wicked",
+    "popularity" : 36,
+    "type" : "artist",
+    "uri" : "spotify:artist:1OXS79e5AMBp2DKWcCbOUp"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/2wSOLQDPvAOxhCNzUsCIWq"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 974
+    },
+    "genres" : [ "soda pop" ],
+    "href" : "https://api.spotify.com/v1/artists/2wSOLQDPvAOxhCNzUsCIWq",
+    "id" : "2wSOLQDPvAOxhCNzUsCIWq",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b2731bd64ccee9861a03d4109f8a",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e021bd64ccee9861a03d4109f8a",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d000048511bd64ccee9861a03d4109f8a",
+      "width" : 64
+    } ],
+    "name" : "The Velvet Candles",
+    "popularity" : 12,
+    "type" : "artist",
+    "uri" : "spotify:artist:2wSOLQDPvAOxhCNzUsCIWq"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/7EOBpvnonNT0gPAPU1hjYF"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 8490
+    },
+    "genres" : [ "classic soul", "souldies" ],
+    "href" : "https://api.spotify.com/v1/artists/7EOBpvnonNT0gPAPU1hjYF",
+    "id" : "7EOBpvnonNT0gPAPU1hjYF",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b2731b64b929b04f1420a9c6410a",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e021b64b929b04f1420a9c6410a",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d000048511b64b929b04f1420a9c6410a",
+      "width" : 64
+    } ],
+    "name" : "The Brothers Of Soul",
+    "popularity" : 28,
+    "type" : "artist",
+    "uri" : "spotify:artist:7EOBpvnonNT0gPAPU1hjYF"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/2Z66arG61B0TdhwE9kWy23"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 10963
+    },
+    "genres" : [ "classic soul", "souldies" ],
+    "href" : "https://api.spotify.com/v1/artists/2Z66arG61B0TdhwE9kWy23",
+    "id" : "2Z66arG61B0TdhwE9kWy23",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b273b6843cb2cfeae38cd9c6f08c",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e02b6843cb2cfeae38cd9c6f08c",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d00004851b6843cb2cfeae38cd9c6f08c",
+      "width" : 64
+    } ],
+    "name" : "Thee Midniters",
+    "popularity" : 37,
+    "type" : "artist",
+    "uri" : "spotify:artist:2Z66arG61B0TdhwE9kWy23"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/4R30xlm3vKtxBwwLkur0tR"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 18
+    },
+    "genres" : [ "soda pop" ],
+    "href" : "https://api.spotify.com/v1/artists/4R30xlm3vKtxBwwLkur0tR",
+    "id" : "4R30xlm3vKtxBwwLkur0tR",
+    "images" : [ ],
+    "name" : "The Four Epics",
+    "popularity" : 0,
+    "type" : "artist",
+    "uri" : "spotify:artist:4R30xlm3vKtxBwwLkur0tR"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/7D09IygyRMrivnQpOkut9R"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 622
+    },
+    "genres" : [ "soda pop" ],
+    "href" : "https://api.spotify.com/v1/artists/7D09IygyRMrivnQpOkut9R",
+    "id" : "7D09IygyRMrivnQpOkut9R",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b27358133185ed7e9614c40d9b83",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e0258133185ed7e9614c40d9b83",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d0000485158133185ed7e9614c40d9b83",
+      "width" : 64
+    } ],
+    "name" : "The Fi-Tones",
+    "popularity" : 5,
+    "type" : "artist",
+    "uri" : "spotify:artist:7D09IygyRMrivnQpOkut9R"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/68BHpjh6skYfxUJjUGotyK"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 185
+    },
+    "genres" : [ "souldies" ],
+    "href" : "https://api.spotify.com/v1/artists/68BHpjh6skYfxUJjUGotyK",
+    "id" : "68BHpjh6skYfxUJjUGotyK",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b27367c56f7356a9d01fa1d2167f",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e0267c56f7356a9d01fa1d2167f",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d0000485167c56f7356a9d01fa1d2167f",
+      "width" : 64
+    } ],
+    "name" : "Bump and the Soul Stompers",
+    "popularity" : 7,
+    "type" : "artist",
+    "uri" : "spotify:artist:68BHpjh6skYfxUJjUGotyK"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/48XKU7dtBVFcEKRVtXPSna"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 3205
+    },
+    "genres" : [ "tejano" ],
+    "href" : "https://api.spotify.com/v1/artists/48XKU7dtBVFcEKRVtXPSna",
+    "id" : "48XKU7dtBVFcEKRVtXPSna",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b2733e475f1ceba428693431389b",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e023e475f1ceba428693431389b",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d000048513e475f1ceba428693431389b",
+      "width" : 64
+    } ],
+    "name" : "Jimmy Edward",
+    "popularity" : 25,
+    "type" : "artist",
+    "uri" : "spotify:artist:48XKU7dtBVFcEKRVtXPSna"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/0BHmAxp7yMVJEatuusmbAH"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 3091
+    },
+    "genres" : [ "tejano" ],
+    "href" : "https://api.spotify.com/v1/artists/0BHmAxp7yMVJEatuusmbAH",
+    "id" : "0BHmAxp7yMVJEatuusmbAH",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b27314bfe4bb66c540acd94b4122",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e0214bfe4bb66c540acd94b4122",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d0000485114bfe4bb66c540acd94b4122",
+      "width" : 64
+    } ],
+    "name" : "Latin Breed",
+    "popularity" : 27,
+    "type" : "artist",
+    "uri" : "spotify:artist:0BHmAxp7yMVJEatuusmbAH"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/2p4Zeb9nmgxf4tbBENHFok"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 5418
+    },
+    "genres" : [ "tejano" ],
+    "href" : "https://api.spotify.com/v1/artists/2p4Zeb9nmgxf4tbBENHFok",
+    "id" : "2p4Zeb9nmgxf4tbBENHFok",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b2731ccbf586c0b2c02a6dff4547",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e021ccbf586c0b2c02a6dff4547",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d000048511ccbf586c0b2c02a6dff4547",
+      "width" : 64
+    } ],
+    "name" : "The Liberty Band",
+    "popularity" : 23,
+    "type" : "artist",
+    "uri" : "spotify:artist:2p4Zeb9nmgxf4tbBENHFok"
+  } ]
+}%                                                                              (base) valeriaalderete@Valerias-MBP ~ % 
