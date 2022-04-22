@@ -71,11 +71,6 @@ xAxisGroup = timeline.append("g")
         //.attr("color", "red")
         .attr("opacity", 0) // "hide" x-Axis
         //.attr("stroke-width", 5);
- 
-
-
-
-
 
 // + TOOLTIP Container
 const Tooltip = d3.select("#timeline") // select timeline element from HTML
@@ -83,53 +78,30 @@ const Tooltip = d3.select("#timeline") // select timeline element from HTML
     .style("position", "absolute")
     .attr("class", "tooltip")
     .style("visibility", "hidden")
-    //.selectAll("text")
-    //.data(data)
-    //.enter()
-    //.append("text")
-    //.style("position", "absolute")
-    //.attr("dx", d => xScale(d.X_position))
-    //.attr("dy", d => yScale(d.Y_position))
-    //.text(d => d.Description)
-    //.attr("opacity", 0);
-    //.style("top", 0)
-    //.style("left", 0)
-    //.attr("background-color", "blue")
-    // .style("padding", "5px")
-    //.html(
-       //'<b><p style="font-size: 25px; line-height: 40px;">' + "Event Name" + '</b> </p>' 
-       //+ '<p style="font-size: 25px; line-height: 30px;"> Style: ' + "Event Description" + '</p> ')
-
+    .style("border", "solid")
+    .style("border-color", "white")
+    .style("border-width", "5px")
+    .style("border-radius", "40px")
 
 
 
 // Tooltip FUNCTIONS
 const mouseover = function (event,d){
-  //Tooltip
-   // .style("opacity", 1)
-    // .html("TOOLTIP TEXT: " + d.Description)
     d3.select(this)
     .style("stroke", "#01b3b3")
     .style("stroke-width", 8)
     Tooltip.transition()
-          .duration(200)
-          .style("visibility","visible")
-      
+      .duration(200)
+      .style("visibility","visible")
 
-     Tooltip.html("<span style='color:white;'><h3>"+d.Date+"</h3><span style='color:white;'><h2>"+d.Event+"</h2><img src="+d.Media+" style='max-width:50%;height:auto; ></ahref></span><span style='color:white'><p>"+d.Description+"</p></span>" )                            
-
-      //.attr('class', 'audio')
-     // Tooltip.html('<p>' +d.Video+ '</p>')
+    Tooltip.html("<span style='color:white;'><h3>"+d.Date+"</h3><span style='color:white;'><h2>"+d.Event+"</h2><img src="+d.Media+" style='max-width:50%;height:auto; ></ahref></span><span style='color:white'><p>"+d.Description+"</p></span>" )
       .style("background-color", "#6d655c")
       .style("width", "25%")
       .style("padding", "15px")
       .style("left",(event.pageX)-500+"px")
       .style("top",(event.pageY)-380+"px")   
      
-      //.append("div")
-      
-      // .html('<iframe src=" ' + d.Video + ' " title="YouTube video player" ; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
-      
+     
 }
 
 const mouseleave = function (event,d){
